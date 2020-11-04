@@ -1,0 +1,1 @@
+process.env.PORT = process.env.PORT || 3000; // Esto garantiza de que al hacer deploy no exista problemas con el puerto. Ya que el proveedor asignara la que tiene destinada. La asigna a esa variable de entorno y si es local trabajamos sobre el puerto 3000.
