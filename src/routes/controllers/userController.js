@@ -34,6 +34,7 @@ class UserController {
     const from = Number(req.query.from) || 0;
     const limit = Number(req.query.limit) || 10;
     //#endregion Pagination
+    // Aqui en req.userLogged esta disponible el usuario que ingreso previamente. Y el middleware ya lo verifico con su token
     try {
       const users = await service.getUsers(from, limit);
       const usersQuantity = await service.getQuantityActiveUsers();
