@@ -118,7 +118,7 @@ class CategoryController {
           status,
           ok: false,
           error: {
-            message: 'No existe el usuario o ha ocurrido un problema al tratar de eliminar la categoria'
+            message: 'No existe la categoria o ha ocurrido un problema al tratar de eliminarla'
           },
         });
       }
