@@ -13,6 +13,7 @@ class UserService {
     const options = {
       new: true,
       runValidators: true,
+      context: 'query', //Es requerido para usar el este metodo y obligar a validar con el mongoose unique validator
     };
     return await User.findByIdAndUpdate(id, userToUpdate, options);
   }
